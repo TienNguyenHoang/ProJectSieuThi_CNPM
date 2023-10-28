@@ -399,7 +399,6 @@ public class ThongKePanel extends javax.swing.JPanel {
                     soLuongKhachHang = uniqueCustomerIds.size();
                     jlbCustomer.setText(soLuongKhachHang + "  Khách Hàng");
                     jlbDT.setText(TongDoanhThu + " VNÐ");
-
                     float TongKhoangChi = 0;
                     for (PhieuNhapDTO pn : listpn) {
                         java.sql.Timestamp ngayLapPN = pn.getNgLapPhieu();
