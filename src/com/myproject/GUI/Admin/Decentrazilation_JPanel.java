@@ -169,11 +169,6 @@ public class Decentrazilation_JPanel extends javax.swing.JPanel {
                         JOptionPane.showMessageDialog(null, "Cần Phân Quyền Đúng Với Chức Vụ Của Nhân Viên!");
                         return;
                     }
-                    if (staff.getPasswd().trim().equals("")) {
-                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                        String ngSinhString = sdf.format(staff.getNgSinh());
-                        staff.setPasswd(ngSinhString);
-                    }
                     nhanVienBUS.updateStaffInfo(staff);
                     JOptionPane.showMessageDialog(null, "PHÂN QUYỀN THÀNH CÔNG!");
                     loadDataToTable(nhanVienBUS.getStaffArrayList());

@@ -165,12 +165,12 @@ public class KhuyenMaiPanel extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jToolBar1 = new javax.swing.JToolBar();
         jbttnOpenFormAddKM = new javax.swing.JButton();
+        jbttnOpenFormDetailKM = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jbttnOffKM = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jbttnOpenFormFixKM = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
-        jbttnOpenFormDetailKM = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jtfSearch = new javax.swing.JTextField();
@@ -694,6 +694,18 @@ public class KhuyenMaiPanel extends javax.swing.JPanel {
             }
         });
         jToolBar1.add(jbttnOpenFormAddKM);
+
+        jbttnOpenFormDetailKM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/detail.png"))); // NOI18N
+        jbttnOpenFormDetailKM.setText("Xem");
+        jbttnOpenFormDetailKM.setFocusable(false);
+        jbttnOpenFormDetailKM.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jbttnOpenFormDetailKM.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jbttnOpenFormDetailKM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbttnOpenFormDetailKMActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(jbttnOpenFormDetailKM);
         jToolBar1.add(jSeparator1);
 
         jbttnOffKM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/remove.png"))); // NOI18N
@@ -721,18 +733,6 @@ public class KhuyenMaiPanel extends javax.swing.JPanel {
         });
         jToolBar1.add(jbttnOpenFormFixKM);
         jToolBar1.add(jSeparator3);
-
-        jbttnOpenFormDetailKM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/detail.png"))); // NOI18N
-        jbttnOpenFormDetailKM.setText("Xem");
-        jbttnOpenFormDetailKM.setFocusable(false);
-        jbttnOpenFormDetailKM.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jbttnOpenFormDetailKM.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jbttnOpenFormDetailKM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbttnOpenFormDetailKMActionPerformed(evt);
-            }
-        });
-        jToolBar1.add(jbttnOpenFormDetailKM);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

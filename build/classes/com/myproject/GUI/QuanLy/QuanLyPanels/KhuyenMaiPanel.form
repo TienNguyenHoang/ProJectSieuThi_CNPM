@@ -892,6 +892,20 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbttnOpenFormAddKMActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JButton" name="jbttnOpenFormDetailKM">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/resources/images/detail.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Xem"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbttnOpenFormDetailKMActionPerformed"/>
+              </Events>
+            </Component>
             <Component class="javax.swing.JToolBar$Separator" name="jSeparator1">
             </Component>
             <Component class="javax.swing.JButton" name="jbttnOffKM">
@@ -925,20 +939,6 @@
               </Events>
             </Component>
             <Component class="javax.swing.JToolBar$Separator" name="jSeparator3">
-            </Component>
-            <Component class="javax.swing.JButton" name="jbttnOpenFormDetailKM">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/resources/images/detail.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Xem"/>
-                <Property name="focusable" type="boolean" value="false"/>
-                <Property name="horizontalTextPosition" type="int" value="0"/>
-                <Property name="verticalTextPosition" type="int" value="3"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbttnOpenFormDetailKMActionPerformed"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>

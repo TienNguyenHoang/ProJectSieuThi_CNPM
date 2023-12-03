@@ -23,6 +23,9 @@ public class KhuyenMaiBUS {
     }
     public String getLastestNum() {
         String MaKM = km.getLastestNum().trim();
+        if (MaKM.isEmpty()) {
+            return "KM01";
+        }
         int index = Integer.parseInt(MaKM.substring(2));
         return "KM" + String.format("%02d", index+1);
     }
